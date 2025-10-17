@@ -1,0 +1,693 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:focus,button:focus,input:focus {
+  outline: 2px solid var(--white-red);
+}
+:root{
+    --white-red:#b84f4f;
+    --black-red:#5e1212;
+    --footer-nav:#003f7ebb;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom left,var(--black-red) ,var(--white-red));
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+/* ============================= navbar & footer =============================*/
+.navbar,footer{
+    max-width: 500px;
+    min-width: 390px;
+    width: 100%;
+    background: var(--footer-nav);
+    color: aliceblue;
+}
+.ftr{/*----------- Footer class ftr -----------*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 8rem;
+    font-size: large;
+}
+.navbar{
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 3rem;
+}
+.navbar>.items{
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 4.2rem;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.navbar>.items:hover{
+    background: #b3aeae93;
+    color: #334455;
+}
+
+/*========================== Main content =============================*/
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom left, var(--black-red),#c06161,var(--black-red));
+    font-size: 1.2rem;
+    color: white;
+    justify-content: center;
+    max-width: 500px;
+    min-width: 390px;
+    width: 100%;
+    min-height: 98vh;
+}
+.main > h2,.main>p,.main>h4{
+    margin: 1rem auto;
+    text-align: center;
+}
+    .main>h4{
+        margin: 0.5rem auto;
+    }
+    .main>p{
+        width: 50%;
+    }
+.main>img{
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    box-shadow: #0D0701 1rem 1rem 6rem;
+    margin: 0 auto;
+    transition: box-shadow .6s ease, width .5s, height .5s ease;
+}
+.main>img:hover{
+    width: 10rem;
+    height: 10rem;
+    box-shadow: #817273 1rem 1rem 6rem;
+}
+.social-media{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    width: 80%;
+}
+.sm-item{
+    padding: 1rem 1.6rem;
+    border: 1px solid white;
+    border-radius: 2rem;
+    background: #ffffff42;
+    transition: background.4s, color .4s;
+}
+.social-media>.sm-item:hover{
+    background: #fefefead;
+    color: #5e1212;
+}
+.sm-item>img{
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+}
+/*===================================Les titre pages ===========================*/
+.header-contianers{
+    max-width: 500px;
+    min-width: 390px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    background-image: linear-gradient(to bottom left, #D25B5B, #670707);
+}
+/*================================== A propot ===================================*/
+.arpopo-contianer{
+    padding: 2.5rem 0;
+}
+.apropo{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-top: 2rem;
+    padding: 1rem auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.apropo>div{
+    flex: 1;
+    margin-top: 1rem;
+}
+.apropo>div>img{
+    width: 250px;
+    height: 300px;
+    border: #690f15 2px solid;
+    box-shadow: #0D0701 10px 10px 70px;
+    transition: margin-top .5s ease-in-out,width .4s ease-in-out, height .4s ease-in-out, box-shadow .5s ease-in-out;
+}
+.apropo>div>img:hover{
+    margin-top: -0.4rem;
+    width: 256px;
+    height: 305px;
+    box-shadow: #181007e5 10px 10px 70px;
+}
+.apropo>.para{
+    width: 80%;
+    font-size: 1rem;
+    color: #0D0701;
+    text-align: left;
+    flex: 2;
+}
+/*======================= Projets =========================*/
+.project-contianer{
+    background-image: linear-gradient(to bottom right,#670707 ,#D25B5B );
+}
+.projects{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex: 4;
+    width: 90%;
+    margin: 3rem auto;
+}
+.hestoir{
+    flex: 1;
+    display: flex;
+    border-left: #0D0701 solid 3px;
+    flex-direction: column;
+}
+.hestoir>.item{
+    margin-top: 2rem;
+    justify-content: right;
+    height: 33%;
+    width: 100%;
+    border-top: 2px solid #2a0101;
+}
+.div-projects{
+    flex: 3;
+}
+.project-item{
+    margin-top: 2rem;
+    border-radius: 10px;
+    border-top: 3px solid #2a0101;
+    background: #c6666698;
+    justify-items: center;
+    width: 70%;
+    transition: border-top .6s ease-in-out, background .6s ease-in-out, width .6s ease-in-out, margin-top .6s ease-in-out, margin-left ease-in-out;
+}
+.project-item:hover{
+    border-top:4px solid #dbcaca;
+    background: #36151598;
+    width: 85%;
+    margin-top: -0.1rem;
+    margin-left: -0.8rem;
+}
+.project-item>img{
+    width: 95%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 1rem auto;
+}
+/*======================= Formation & Certifications =========================*/
+
+.formation-container{
+    position: relative;
+    top: -20px;
+    left: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: linear-gradient(to bottom left,#670707 ,#D25B5B );
+}
+.formation{  
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+}
+.formation-item{
+    width: 80vh;
+    height: 55vh;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(27, 27, 27);
+    background: #c0363698;
+    box-shadow: #252424 -5px -5px 20px;
+    transition: width .5s ease-in-out,border-radius .5s ease-in-out,background .5s ease-in-out, box-shadow .5s ease-in-out,box-shadow .5s ease-in-out, color .5s ease-in-out;
+}
+.formation-item:hover{
+    width: 75%;
+    border-radius: 15px;
+    background: #4e171753;
+    box-shadow: #656363 -8px -8px 30px;
+    color: rgb(167, 159, 159);
+}
+.formation-item>img{
+    height: 250px;
+    width: 300px;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+}
+/*======================= Contact =========================*/
+.header-contianers>img{
+    width: 60px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+.contact-contianer{
+    margin-top: -20px;
+    width: 100%;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form>.item{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0;
+    gap: 2rem;
+}
+form>.item>label{
+    font-size: 1.2rem;
+    width: 60px;
+}
+input,textarea{
+    width: 70%;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--footer-nav);
+    background: #eee8e8;
+    transition: color .4s ease-in-out,padding .3s ease-in-out ;
+}
+textarea{
+    overflow: hidden;
+    resize: none;
+    height: 8rem;
+}
+input::placeholder,textarea::placeholder{
+    color: #90444488;
+}
+input:hover,textarea:hover{
+    color: #5e1212de;
+    padding: 1rem 1.1rem;
+}
+input::placeholder:focus,textarea::placeholder:focus{
+    color: var(--black-red);
+}
+
+.btn-send{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-send>a{
+    background: #d394947f;
+    border: 2px solid #220407;
+    color: #220407;
+    width: 12rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: color .5s ease-out, border .5s ease-out;
+}
+.btn-send>a:hover{
+    color: #d4b6b6;
+    border: 2px solid #d4b6b6;
+}
+.contact-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact-us>.item{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    padding: 1rem;
+    width: 100%;
+    background: #4236362f;
+    border: 1px solid #817273;
+    border-radius: 4px;
+    transition: font-size .5s ease-in-out, background .4s ease-in-out;
+}
+.contact-us>.item:hover{
+    font-size: 1.3rem;
+    background: #7969692f;
+    border: 2px solid #978889;
+}
+.location>a{
+    color: #0D0701;
+}
+.contact-us>.item>p{
+    margin-left: 5rem;
+}
+.Resaux>p{
+    color: #0D0701;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+.contact-us>.item>p>a>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+@media (min-width: 501px) and (max-width: 768px){
+    /* ============================= navbar & footer =============================*/
+    .navbar,footer{ 
+        max-width: 768px;
+        min-width: 501px;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .navbar .items{
+        width: 6rem;
+    }
+    /*========================== Main content =============================*/
+    .main{ 
+        max-width: 768px;
+        min-width: 501px;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 3rem 0;
+    }
+    /*====================== Header les pages =============================*/
+    .header-contianers{ 
+        max-width: 768px;
+        min-width: 501px;
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+    
+/*================================== A propot ===================================*/
+    .apropo{
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .apropo>div>img{
+        border: #690f15 4px solid;
+        width: 260px;
+        height: 300px;
+    }
+    .apropo>.para{
+        font-size: 1rem;
+        line-height: 20px;
+        width: 100%;
+    }
+    
+/*======================= Projets =========================*/
+    .projects{
+        width: 80%;
+    }
+    .project-item{
+        padding: 2.5rem 1.8rem;
+        border-top: 3px solid #220407;
+    }
+    .project-item>img{
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin: 1rem auto;
+    }
+/*======================= Formation & Certifications =========================*/
+    .formation{
+        width: 100%;
+    }
+
+    .formation-container{
+        top: -1rem;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .formation-item{
+        width: 60vw;
+        height: 60vh;
+    }
+
+/*======================= Contact =========================*/
+    .contact-contianer{
+        margin-top: -30px;
+    }
+    .contact-us{
+        padding-top: 2rem;
+    }
+    .contact-us>.item{
+        font-size: 1.3rem;
+    }
+}
+@media (min-width:769px) and (max-width: 992px) {
+    /* ============================= navbar & footer =============================*/
+    .navbar,footer{
+        max-width: 992px;
+        min-width: 769px;
+        width: 100%;
+        font-size:1rem;
+    }
+    .navbar .items{
+        width: 10vw;
+    }
+    /*========================== Main content =============================*/
+    .main{
+        max-width: 992px;
+        min-width: 769px;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 8rem 0;
+    }
+    .main>img{
+        width: 10rem;
+        height: 10rem;
+        transition: box-shadow .5s, width .5s, height .5s;
+    }
+    .social-media{
+        height: 10px;
+    }
+    /*====================== Header les pages =============================*/
+    .header-contianers{
+        min-width: 769px;
+        max-width: 992px;
+        width: 100%;
+        padding: 6rem 8rem;
+        font-size: larger;
+    }
+    
+/*================================== A propot ===================================*/
+    .apropo{
+        width: 100%;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .apropo>.para{
+        padding: 0.6rem;
+        font-size: 1rem;
+    }
+    .apropo>div>img{
+        width: 310px;
+        height: 350px;
+    }
+    
+/*======================= Projets =========================*/
+    .projects{
+        width: 80%;
+    }
+    .project-item{
+        width: 65%;
+        padding: 2rem 1rem;
+        border-top: 4px solid #220407;
+    }
+    .project-item>img{
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+/*======================= Formation & Certifications =========================*/
+  .formation{  
+    flex-direction: column;
+    padding: 3rem 0;
+    min-width: 769px;
+    max-width: 992px;
+    width: 100%;
+}
+.formation-item{
+    width: 50vw;
+    height: 50vh;
+    margin-top: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.formation-item>img{
+    border-radius: 0.6rem;
+}
+/*======================= Contact =========================*/
+    .contact{
+        width: 100%;
+    }
+    .contact-us{
+        margin-top: -30px;
+        padding-top: 2rem;
+    }
+    .contact-us>.item{
+        font-size: 18px;
+    }
+    .btn-send{
+        justify-content: center;
+    }
+}
+@media (min-width:993px) and (max-width:1992px){
+     /* ============================= navbar & footer =============================*/
+    .navbar,footer{
+        max-width: 1992px;
+        min-width: 993px;
+        width: 100%;
+        font-size:larger;
+        height: 4rem;
+    }
+    .navbar>.items{
+        width: 8rem;
+        font-size: 1.3rem;
+}        
+    /*========================== Main content =============================*/
+    .main{
+        max-width: 1992px;
+        min-width: 993px;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 8rem 0;
+    }
+    .main>img{
+        width: 12rem;
+        height: 12rem;
+        transition: box-shadow .5s ease-in-out, width .5s, height .5s ease-in-out;
+    }
+    /*====================== Header les pages =============================*/
+    .header-contianers{
+        max-width: 1992px;
+        min-width: 993px;
+        width:100%;
+        padding: 8rem 0;
+    }
+    
+/*================================== A propot ===================================*/
+    .apropo{
+        width: 100%;
+        flex-direction: row;
+        font-size: 8rem;
+    }
+    .apropo>.para{
+        width: 80%;
+        padding: 4rem;
+        font-size: 1.2rem;
+    }
+    .apropo>div>img{
+        border: #690f15 3px solid;
+        margin-left: 3rem;
+        width: 300px;
+        height: 350px;
+    }
+    
+/*======================= Projets =========================*/
+    .projects{
+        width: 50%;
+    }
+    .project-item{
+        padding: 2.5rem 1rem;
+        border-top: 4px solid #220407;
+    }
+    .project-item>img{
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        margin: 1rem auto;
+    }
+    
+/*======================= Formation & Certifications =========================*/
+.formation{  
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    width: 90%;
+}
+.formation-item{
+    width: 100%;
+    max-width: 400px;
+    height: 50vh;
+}
+.formation-item>img{
+    border-radius: 0.6rem;
+    margin: 0;
+}
+/*======================= Contact =========================*/
+    
+.contact{
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+input,textarea{
+    width: 31vw;
+}
+textarea{
+    height: 12rem;
+}
+.btn-send>a{
+    width: 25vw;
+    font-size: 2rem;
+}
+.contact-us{
+    width: 48vw;
+    right: 0;
+}
+.contact-us>.item>p{
+    margin-left: 1rem;
+}
+form>.item>label{
+    font-size: 2rem;
+    width: 8rem;
+}
+.contact-us>.item{
+    font-size: 2rem;
+    border-radius: 1rem;
+    transition: font-size 0.3s;
+}
+.contact-us>.item:hover{
+    font-size: 2.1rem;
+}
+}
