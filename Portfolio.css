@@ -98,7 +98,6 @@ body{
     border-radius: 50%;
     width: 9rem;
     height: 9rem;
-    aspect-ratio: attr(width)/attr(height);
     box-shadow: #0D0701 1.5rem 1.5rem 6rem;
     margin: 2rem auto;
     transition: box-shadow .6s ease, width .5s, height .5s ease;
@@ -130,7 +129,6 @@ body{
     width: 15px;
     height: 15px;
     margin-right: 2px;
-    aspect-ratio: attr(width)/attr(height);
 }
 /*===================================Les titre pages ===========================*/
 .header-contianers{
@@ -167,14 +165,12 @@ body{
     height: 300px;
     border: #690f15 2px solid;
     box-shadow: #0D0701 10px 10px 70px;
-    aspect-ratio: attr(width)/attr(height);
     transition: margin-top .5s ease-in-out,width .4s ease-in-out, height .4s ease-in-out, box-shadow .5s ease-in-out;
 }
 .apropo>div>img:hover{
     margin-top: -0.4rem;
     width: 256px;
     height: 305px;
-    aspect-ratio: attr(width)/attr(height);
     box-shadow: #181007e5 10px 10px 70px;
 }
 .apropo>.para{
@@ -229,7 +225,6 @@ body{
 .project-item>img{
     width: 170px;
     height: 250px;
-    aspect-ratio: attr(width)/attr(height);
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin: 1rem auto;
@@ -280,7 +275,6 @@ body{
 .formation-item>img{
     height: 250px;
     width: 300px;
-    aspect-ratio: attr(width)/attr(height);
     border-radius: 8px;
     margin: 0.5rem 0;
 }
@@ -288,7 +282,6 @@ body{
 .header-contianers>img{
     width: 60px;
     height: 50px;
-    aspect-ratio: attr(width)/attr(height);
     margin-bottom: 1rem;
 }
 .contact-contianer{
@@ -393,7 +386,6 @@ input::placeholder:focus,textarea::placeholder:focus{
 .contact-us>.item>p>a>img{
     width: 50px;
     height: 50px;
-    aspect-ratio: attr(width)/attr(height);
     border-radius: 50%;
     margin-top: 1rem;
 }
@@ -435,7 +427,6 @@ input::placeholder:focus,textarea::placeholder:focus{
         border: #690f15 4px solid;
         width: 260px;
         height: 300px;
-        aspect-ratio: attr(width)/attr(height);
     }
     .apropo>.para{
         font-size: 1.1rem;
@@ -455,7 +446,6 @@ input::placeholder:focus,textarea::placeholder:focus{
     .project-item>img{
         width: 200px;
         height: 250px;
-        aspect-ratio: attr(width)/attr(height);
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
         margin: 1rem auto;
@@ -508,7 +498,6 @@ input::placeholder:focus,textarea::placeholder:focus{
     .main>img{
         width: 10rem;
         height: 10rem;
-    aspect-ratio: attr(width)/attr(height);
         transition: box-shadow .5s, width .5s, height .5s;
     }
     .social-media{
@@ -536,9 +525,7 @@ input::placeholder:focus,textarea::placeholder:focus{
     .apropo>div>img{
         width: 310px;
         height: 350px;
-        aspect-ratio: attr(width)/attr(height);
     }
-    
 /*======================= Projets =========================*/
     .projects{
         width: 80%;
@@ -551,7 +538,6 @@ input::placeholder:focus,textarea::placeholder:focus{
     .project-item>img{
         width: 230px;
         height: 280px;
-        aspect-ratio: attr(width)/attr(height);
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
     }
@@ -615,7 +601,6 @@ input::placeholder:focus,textarea::placeholder:focus{
     .main>img{
         width: 12rem;
         height: 12rem;
-        aspect-ratio: attr(width)/attr(height);
         transition: box-shadow .5s ease-in-out, width .5s, height .5s ease-in-out;
     }
     /*====================== Header les pages =============================*/
@@ -642,9 +627,7 @@ input::placeholder:focus,textarea::placeholder:focus{
         margin-left: 3rem;
         width: 300px;
         height: 350px;
-        aspect-ratio: attr(width)/attr(height);
     }
-    
 /*======================= Projets =========================*/
     .projects{
         width: 50%;
@@ -656,12 +639,10 @@ input::placeholder:focus,textarea::placeholder:focus{
     .project-item>img{
         width: 280px;
         height: 300px;
-        aspect-ratio: attr(width)/attr(height);
         border-top-right-radius: 15px;
         border-bottom-left-radius: 15px;
         margin: 1rem auto;
     }
-    
 /*======================= Formation & Certifications =========================*/
 .formation{  
     flex-direction: row;
