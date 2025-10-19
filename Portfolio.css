@@ -37,9 +37,9 @@ body{
 }
 .ftr{/*----------- Footer class ftr -----------*/
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 8rem;
     font-size: large;
 }
@@ -56,14 +56,17 @@ body{
     height: 3rem;
 }
 .navbar>.items{
-    padding: 1rem 0;
-    font-size: 0.9rem;
     text-align: center;
     width: 4.2rem;
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
 }
-.navbar>.items:hover{
+.navbar>.items>a{    
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: color ease .5s, background ease .5s;
+}
+.navbar>.items>a:hover{
     background: #b3aeae93;
     color: #334455;
 }
@@ -72,46 +75,45 @@ body{
 .main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(to bottom left, var(--black-red),#c06161,var(--black-red));
+    background-image: linear-gradient(to bottom left, var(--black-red),#b25454,var(--black-red));
     font-size: 1.2rem;
     color: white;
-    justify-content: center;
     max-width: 500px;
     min-width: 390px;
     width: 100%;
     min-height: 98vh;
 }
-.main > h2,.main>p,.main>h4{
-    margin: 1rem auto;
+.main > h2,.main>p{
     text-align: center;
+    margin-top: 1.5rem;
 }
-    .main>h4{
-        margin: 0.5rem auto;
-    }
     .main>p{
         width: 50%;
+        line-height: 1.5rem;  
     }
 .main>img{
     border-radius: 50%;
     width: 9rem;
     height: 9rem;
-    box-shadow: #0D0701 1rem 1rem 6rem;
-    margin: 0 auto;
+    aspect-ratio: attr(width)/attr(height);
+    box-shadow: #0D0701 1.5rem 1.5rem 6rem;
+    margin: 2rem auto;
     transition: box-shadow .6s ease, width .5s, height .5s ease;
 }
 .main>img:hover{
     width: 10rem;
     height: 10rem;
-    box-shadow: #817273 1rem 1rem 6rem;
+    box-shadow: #817273 1.8rem 1.8rem 4rem;
 }
 .social-media{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 0.5rem;
-    width: 80%;
+    width: 90%;
 }
 .sm-item{
     padding: 1rem 1.6rem;
@@ -128,6 +130,7 @@ body{
     width: 15px;
     height: 15px;
     margin-right: 2px;
+    aspect-ratio: attr(width)/attr(height);
 }
 /*===================================Les titre pages ===========================*/
 .header-contianers{
@@ -164,12 +167,14 @@ body{
     height: 300px;
     border: #690f15 2px solid;
     box-shadow: #0D0701 10px 10px 70px;
+    aspect-ratio: attr(width)/attr(height);
     transition: margin-top .5s ease-in-out,width .4s ease-in-out, height .4s ease-in-out, box-shadow .5s ease-in-out;
 }
 .apropo>div>img:hover{
     margin-top: -0.4rem;
     width: 256px;
     height: 305px;
+    aspect-ratio: attr(width)/attr(height);
     box-shadow: #181007e5 10px 10px 70px;
 }
 .apropo>.para{
@@ -212,7 +217,6 @@ body{
     border-radius: 10px;
     border-top: 3px solid #2a0101;
     background: #c6666698;
-    justify-items: center;
     width: 70%;
     transition: border-top .6s ease-in-out, background .6s ease-in-out, width .6s ease-in-out, margin-top .6s ease-in-out, margin-left ease-in-out;
 }
@@ -220,14 +224,16 @@ body{
     border-top:4px solid #dbcaca;
     background: #36151598;
     width: 85%;
-    margin-top: -0.1rem;
-    margin-left: -0.8rem;
+    margin: -0.1rem auto;
 }
 .project-item>img{
-    width: 95%;
+    width: 170px;
+    height: 250px;
+    aspect-ratio: attr(width)/attr(height);
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin: 1rem auto;
+
 }
 /*======================= Formation & Certifications =========================*/
 
@@ -274,6 +280,7 @@ body{
 .formation-item>img{
     height: 250px;
     width: 300px;
+    aspect-ratio: attr(width)/attr(height);
     border-radius: 8px;
     margin: 0.5rem 0;
 }
@@ -281,6 +288,7 @@ body{
 .header-contianers>img{
     width: 60px;
     height: 50px;
+    aspect-ratio: attr(width)/attr(height);
     margin-bottom: 1rem;
 }
 .contact-contianer{
@@ -385,6 +393,7 @@ input::placeholder:focus,textarea::placeholder:focus{
 .contact-us>.item>p>a>img{
     width: 50px;
     height: 50px;
+    aspect-ratio: attr(width)/attr(height);
     border-radius: 50%;
     margin-top: 1rem;
 }
@@ -413,6 +422,7 @@ input::placeholder:focus,textarea::placeholder:focus{
         min-width: 501px;
         width: 100%;
         padding: 4rem 2rem;
+        font-size: 1.4rem;
     }
     
 /*================================== A propot ===================================*/
@@ -425,23 +435,27 @@ input::placeholder:focus,textarea::placeholder:focus{
         border: #690f15 4px solid;
         width: 260px;
         height: 300px;
+        aspect-ratio: attr(width)/attr(height);
     }
     .apropo>.para{
-        font-size: 1rem;
-        line-height: 20px;
-        width: 100%;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        width: 70%;
     }
     
 /*======================= Projets =========================*/
     .projects{
-        width: 80%;
+        width: 90%;
     }
     .project-item{
         padding: 2.5rem 1.8rem;
         border-top: 3px solid #220407;
+        width: 80%;
     }
     .project-item>img{
-        width: 100%;
+        width: 200px;
+        height: 250px;
+        aspect-ratio: attr(width)/attr(height);
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
         margin: 1rem auto;
@@ -478,7 +492,7 @@ input::placeholder:focus,textarea::placeholder:focus{
         max-width: 992px;
         min-width: 769px;
         width: 100%;
-        font-size:1rem;
+        font-size:1.1rem;
     }
     .navbar .items{
         width: 10vw;
@@ -494,6 +508,7 @@ input::placeholder:focus,textarea::placeholder:focus{
     .main>img{
         width: 10rem;
         height: 10rem;
+    aspect-ratio: attr(width)/attr(height);
         transition: box-shadow .5s, width .5s, height .5s;
     }
     .social-media{
@@ -521,6 +536,7 @@ input::placeholder:focus,textarea::placeholder:focus{
     .apropo>div>img{
         width: 310px;
         height: 350px;
+        aspect-ratio: attr(width)/attr(height);
     }
     
 /*======================= Projets =========================*/
@@ -528,12 +544,14 @@ input::placeholder:focus,textarea::placeholder:focus{
         width: 80%;
     }
     .project-item{
-        width: 65%;
+        width: 80%;
         padding: 2rem 1rem;
         border-top: 4px solid #220407;
     }
     .project-item>img{
-        width: 100%;
+        width: 230px;
+        height: 280px;
+        aspect-ratio: attr(width)/attr(height);
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
     }
@@ -581,20 +599,23 @@ input::placeholder:focus,textarea::placeholder:focus{
         height: 4rem;
     }
     .navbar>.items{
-        width: 8rem;
-        font-size: 1.3rem;
-}        
-    /*========================== Main content =============================*/
+        width: 9rem;
+    }        
+    .navbar>.items>a{
+        padding:1rem 2rem;
+        font-size: 1.2rem;
+    }
+    /*============================= Main content ===================================*/
     .main{
         max-width: 1992px;
         min-width: 993px;
         width: 100%;
         font-size: 1.2rem;
-        padding: 8rem 0;
     }
     .main>img{
         width: 12rem;
         height: 12rem;
+        aspect-ratio: attr(width)/attr(height);
         transition: box-shadow .5s ease-in-out, width .5s, height .5s ease-in-out;
     }
     /*====================== Header les pages =============================*/
@@ -621,6 +642,7 @@ input::placeholder:focus,textarea::placeholder:focus{
         margin-left: 3rem;
         width: 300px;
         height: 350px;
+        aspect-ratio: attr(width)/attr(height);
     }
     
 /*======================= Projets =========================*/
@@ -632,7 +654,9 @@ input::placeholder:focus,textarea::placeholder:focus{
         border-top: 4px solid #220407;
     }
     .project-item>img{
-        width: 100%;
+        width: 280px;
+        height: 300px;
+        aspect-ratio: attr(width)/attr(height);
         border-top-right-radius: 15px;
         border-bottom-left-radius: 15px;
         margin: 1rem auto;
@@ -642,20 +666,30 @@ input::placeholder:focus,textarea::placeholder:focus{
 .formation{  
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
     padding: 3rem 0;
-    width: 90%;
+    width: 99%;
+    height: 30vh;
 }
 .formation-item{
-    width: 100%;
-    max-width: 400px;
+    width: 31%;
+    max-width: 380px;
     height: 50vh;
+    margin-top: 8rem;
+    transition: height .4s ease, width .4s ease;
+}
+.formation-item:hover{
+    width: 31.5%;
+    height: 52vh;
 }
 .formation-item>img{
     border-radius: 0.6rem;
     margin: 0;
 }
 /*======================= Contact =========================*/
-    
+#contact{
+    padding-top: 20rem;
+}
 .contact{
     flex-direction: row;
     justify-content: space-evenly;

@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="keywords" content="Portfolio, OUTERGA, MOUSTAFA, Developper">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Outerga Portfolio</title>
     <link rel="stylesheet" href="Portfolio.css">
+    <link rel="shortcut icon" href="/images/4444.jpg">
 </head>
 <body>
     <div class="navbar">
-        <div class="items item-1"><a href="#accueil">Accueil</a></div>
-        <div class="items item-2"><a href="#apropo">À propos</a></div>
-        <div class="items item-3"><a href="#projects">projects</a></div>
-        <div class="items item-4"><a href="#formation">Formations</a></div>
-        <div class="items item-5"><a href="#contact">Contact</a></div>
+        <div class="items item-1"><a href="#accueil" rel="Accueil">Accueil</a></div>
+        <div class="items item-2"><a href="#apropo" rel="a propo">À propos</a></div>
+        <div class="items item-3"><a href="#projects" rel="projects">projects</a></div>
+        <div class="items item-4"><a href="#formation" rel="formation">Formations</a></div>
+        <div class="items item-5"><a href="#contact" rel="contact">Contact</a></div>
     </div>
     <div class="main" id="accueil">
-        <img src="/images/4444.jpg" alt="Outerga - image">
-        <h2>MOUSTAFA OUTERGA</h2>
-        <h4>Développeur Full-stack | .Net C#</h4>
-        <p>Étudiant passionné par le développement web et la création d'expériences utilisateur exceptionnelles</p>
+        <img src="images/4444.jpg" alt="Outerga - image">
+        <h2><span id="name">MOUSTAFA</span> <span id="lastname">OUTERGA</span></h2>
+            <p>Développeur Full-stack | .Net C#</p>
+        <p> Étudiant passionné par le développement web et la création d'expériences utilisateur exceptionnelles</p>
         <div class="social-media">
             <a href="#contact" class="sm-item"><img src="/images/email.png" alt="Email pic"> Email</a>
-            <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" class="sm-item"><img src="/images/linkedin.svg" alt="linkedin image"> LinkedIn</a>
-            <a href="https://github.com/OUTERGA-MOUSTAFA" class="sm-item"><img src="/images/github.svg" alt="GitHub image"> GitHub</a>
-            <a href="#apropo" class="sm-item"><img src="/images/cv.png" alt="CV icone"> CV</a>
+            <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" rel="linkedin img" class="sm-item"><img src="/images/linkedin.svg" alt="linkedin image"> LinkedIn</a>
+            <a href="https://github.com/OUTERGA-MOUSTAFA" class="sm-item" rel="github img"><img src="/images/github.svg" alt="GitHub image"> GitHub</a>
+            <a href="#apropo" class="sm-item" rel="CV"><img src="/images/cv.png" alt="CV icone"> CV</a>
         </div>
     </div>
     <!--========================= À propos =======================-->
     <div class="header-contianers arpopo-contianer" id="apropo">
-        <h2>À propos</2>
-            <div class="apropo">
-                <div>
-                    <img src="/images/YouCoder.webp" alt="350px x 400px">
-                </div>
-                <div class="para">
-                    <p>Je suis jeune diplômé de l’institution de Technologie Appliquée TAFRAOUT, désireux de travail dans le domaine 
-                        du développent informatique. Je suis très analytique, responsable et j’aime travailler en équipe.
-                        <br>Développeur Front end, je participe aux différents aspects du développement de votre projet, de son analyse
-                         et sa conception jusqu'à son déploiement final.</p>
-                </div>
+        <h2>À propos</h2>
+        <div class="apropo">
+            <div>
+                <img src="/images/YouCoder.webp" alt="350px x 400px">
             </div>
+            <div class="para">
+                <p>Je suis jeune diplômé de l’institution de Technologie Appliquée TAFRAOUT, désireux de travail dans le domaine 
+                    du développent informatique. Je suis très analytique, responsable et j’aime travailler en équipe.
+                    <br>Développeur Front end, je participe aux différents aspects du développement de votre projet, de son analyse
+                        et sa conception jusqu'à son déploiement final.</p>
+            </div>
+        </div>
     </div>
     <!--========================= Projects =======================-->
     <div class="header-contianers project-contianer" id="projects">
@@ -109,7 +114,7 @@
                     <textarea type="text" name="msg" id="msg" placeholder="Message..." required minlength="50" maxlength="1000"></textarea>
                 </div>
                 <div class="item btn-send">
-                    <a href="#accueil">Envoyer</a>
+                    <a href="#accueil" rel="Envoyer">Envoyer</a>
                 </div>
             </form>
             <div class="contact-us">
@@ -124,15 +129,15 @@
                 </div>
                 <div class="item location">
                     <h5>Adress</h5>
-                    <p><a href="https://maps.app.goo.gl/HtaHAS7XNyDxVbXcA"></a>Dr Talilite Amtdi Guelmim Maroc</p>
+                    <p><a href="https://maps.app.goo.gl/HtaHAS7XNyDxVbXcA" rel="Adress">Dr Talilite Amtdi Guelmim Maroc</a></p>
                 </div>
                 <div class="item Resaux">
                     <h5>Resaux Sociaux :</h5>
                     <p>
-                        <a href="https://github.com/OUTERGA-MOUSTAFA">
+                        <a href="https://github.com/OUTERGA-MOUSTAFA" rel="lien github">
                             <img src="/images/github.svg" alt="github lien">
                         </a>
-                        <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/">
+                        <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" rel="lien GitHub">
                             <img src="/images/linkedin.svg" alt="linkedin lien">
                         </a>
                     </p>
