@@ -161,7 +161,7 @@ body{
 }
 .apropo>div>img{
     width: 250px;
-    height: 300px;
+    height: 250px;
     border: #690f15 2px solid;
     box-shadow: #0D0701 10px 10px 70px;
     transition: margin-top .5s ease-in-out,width .4s ease-in-out, height .4s ease-in-out, box-shadow .5s ease-in-out;
@@ -222,8 +222,8 @@ body{
     margin: -0.1rem auto;
 }
 .project-item>img{
-    width: 170px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin: 1rem auto;
@@ -423,8 +423,8 @@ input::placeholder:focus,textarea::placeholder:focus{
     }
     .apropo>div>img{
         border: #690f15 4px solid;
-        width: 260px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
     }
     .apropo>.para{
         font-size: 1.1rem;
@@ -443,7 +443,7 @@ input::placeholder:focus,textarea::placeholder:focus{
     }
     .project-item>img{
         width: 200px;
-        height: 250px;
+        height: 200px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
         margin: 1rem auto;
@@ -532,7 +532,7 @@ input::placeholder:focus,textarea::placeholder:focus{
         font-size: 1rem;
     }
     .apropo>div>img{
-        width: 310px;
+        width: 350px;
         height: 350px;
     }
 /*======================= Projets =========================*/
@@ -546,7 +546,7 @@ input::placeholder:focus,textarea::placeholder:focus{
     }
     .project-item>img{
         width: 260px;
-        height: 300px;
+        height: 260px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
     }
@@ -646,8 +646,8 @@ input::placeholder:focus,textarea::placeholder:focus{
     .apropo>div>img{
         border: #690f15 3px solid;
         margin-left: 3rem;
-        width: 300px;
-        height: 350px;
+        width: 400px;
+        height: 400px;
     }
 /*======================= Projets =========================*/
     .projects{
@@ -659,7 +659,7 @@ input::placeholder:focus,textarea::placeholder:focus{
     }
     .project-item>img{
         width: 280px;
-        height: 300px;
+        height: 280px;
         border-top-right-radius: 15px;
         border-bottom-left-radius: 15px;
         margin: 1rem auto;
